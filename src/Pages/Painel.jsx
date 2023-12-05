@@ -1,6 +1,8 @@
 import Header from "../components/Header"; 
 import Conteudo from "../components/Conteudo";
 import Tabela from "../components/Tabela";
+
+
 function Painel() {
     return (
         <>
