@@ -1,7 +1,7 @@
 import Table from 'react-bootstrap/Table';
 import Button from 'react-bootstrap/esm/Button';
 import axios from 'axios';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function Tabela() {
     const [btnValue, setBtnValue] = useState("Atualizar")
@@ -12,7 +12,7 @@ function Tabela() {
     }).catch((erro) => {
         console.log(erro)
     })
-    }, [])
+    }, [btnValue])
     return (
         <>
         <button onClick={()=> setBtnValue("Atualizado")}>{btnValue}</button> 
